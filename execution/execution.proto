@@ -118,6 +118,7 @@ message InsertionResult {
 message ValidationRequest {
     types.H256 hash = 1;
     uint64 number = 2;
+    repeated bytes inclusion_list = 7;
 }
 
 message AssembleBlockRequest {
