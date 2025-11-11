@@ -70,6 +70,7 @@ message BlockBody {
   repeated bytes transactions = 3;
   repeated Header uncles = 4;
   repeated types.Withdrawal withdrawals = 5; // added in Shapella (EIP-4895)
+  repeated bytes inclusion_list = 6; // list of transactions that should be included in a payload (EIP-7805)
 }
 
 message Block {
